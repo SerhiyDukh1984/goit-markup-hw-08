@@ -1,0 +1,47 @@
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) translateY(150%);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(0);
+  transition: transform 500ms $timeFunction;
+
+  width: 528px;
+  height: 581px;
+  /* padding: 15px; */
+
+  background: $primeryWhiteColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    transition: fill 250ms var(--time-function);
+  }
+
+  &__close:hover,
+  &__close:focus {
+    fill: $accentColor;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+  }
+}
