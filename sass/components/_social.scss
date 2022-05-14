@@ -1,0 +1,50 @@
+.soc {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border-color: transparent;
+
+    background-color: $primeryWhiteColor;
+    transition: background-color 250ms $timeFunction;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    background-color: $accentColor;
+  }
+
+  &__link {
+    margin: 0;
+    padding: 0;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: #afb1b8;
+    transition: fill 250ms $timeFunction;
+  }
+
+  &__item:hover &__icon,
+  &__item:focus &__icon {
+    fill: $primeryWhiteColor;
+  }
+}

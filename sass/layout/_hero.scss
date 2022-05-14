@@ -1,0 +1,26 @@
+.hero {
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  max-width: 1600px;
+
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bcg-foto.jpg);
+  background-position: center;
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  color: $primeryWhiteColor;
+
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  
+
+    font-weight: 900;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}

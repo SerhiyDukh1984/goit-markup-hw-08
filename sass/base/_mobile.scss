@@ -1,0 +1,211 @@
+@media screen and(min-width: 480px) {
+  .page-header {
+    height: 60px;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .page-header {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 400px;
+
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+      width: 360px;
+
+      line-height: 1.62;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+      width: 360px;
+
+      line-height: 1.62;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .about__image {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    &__image {
+      width: 354px;
+    }
+
+    &__item {
+      width: 354px;
+      margin: 0 15px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    display: flex;
+    margin: 0 -15px;
+
+    &__image {
+      width: 270px;
+    }
+
+    &__item {
+      width: 270px;
+      margin: 0 15px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .card-set__image {
+    display: block;
+    width: 450px;
+    height: 460px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card-set__image {
+    display: block;
+    width: 100%;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    &__item {
+      margin: 15px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__image {
+      width: 354px;
+      height: 374px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set {
+    &-set__image {
+      width: 270px;
+      height: 260px;
+    }
+  }
+
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and(min-width: 480px) {
+  .clients {
+    &__list {
+      display: flex;
+    }
+
+    &__litle {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.18;
+    }
+
+    &__list {
+      margin: -15px;
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      margin: 15px;
+      width: 210px;
+      height: 92px;
+    }
+  }
+}
+
+@media screen and(max-width: 479px) {
+  .clients {
+    &__list {
+      display: block;
+      margin-top: 15px;
+    }
+
+    .clients__link {
+      width: calc(100% - 30px);
+      
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .clients {
+    &__link {
+      width: 226px;
+    }
+    &__litle {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.18;
+    }
+  }
+}
