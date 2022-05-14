@@ -56,8 +56,13 @@
 }
 
 @media screen and (min-width: 480px) {
-  .about__image {
-    width: 450px;
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__image {
+      width: 450px;
+    }
   }
 }
 
@@ -106,11 +111,16 @@
 
 @media screen and (min-width: 480px) {
   .card-set {
-    padding-top: 1px;
+    padding-top: 0px;
     margin: -15px;
+    margin-bottom: 0;
 
     &__item {
-      margin: 30px 15px;
+      // margin: 30px 15px;
+      margin-top: 30px;
+      margin-bottom: 0;
+      margin-left: 15px;
+      margin-right: 15px;
     }
 
     &__item:first-child {
@@ -118,7 +128,7 @@
     }
 
     &__image {
-      display: block;
+      // display: block;
       width: 450px;
       height: 460px;
     }
@@ -132,6 +142,11 @@
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &__title {
+      display: inline-block;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -163,7 +178,7 @@
     }
   }
   .team__title {
-    margin: 15px;
+    // margin: 15px;
   }
 }
 
@@ -202,8 +217,8 @@
       display: flex;
     }
 
-    &__litle {
-      margin-bottom: 30px;
+    &__title {
+      margin-bottom: 15px;
       font-size: 28px;
       line-height: 1.18;
     }
@@ -223,13 +238,17 @@
 
 @media screen and(max-width: 479px) {
   .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     &__list {
       display: block;
-      margin-top: 15px;
+      margin-bottom: 0px;
     }
 
     .clients__link {
-      width: calc(100% - 30px);
+      width: 100%;
+      margin-top: 30px;
     }
 
     &__title {
@@ -252,12 +271,14 @@
     margin-bottom: 94px;
 
     &__link {
+      margin: 0 15px;
       width: 170px;
     }
-  }
+
     &__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.16;
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.16;
+    }
   }
 }
