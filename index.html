@@ -24,29 +24,53 @@
           <a href="./index.html" class="logo"
             ><span class="accent">Web</span>Studio</a
           >
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link current" href="./index.html">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
-          </ul>
+          <button
+            class="menu__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg class="page-header__icon" aria-label="переключатель меню">
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#icon-menu_40px"
+              ></use>
+            </svg>
+          </button>
+          
+          <div class="menu-container" id="menu-container" data-menu >
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link current" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contacts list">
+              <li class="contacts__item">
+                <a href="" class="contacts__link"
+                  ><svg class="contacts__icon" width="16px" heigth="12px">
+                    <use
+                      href="./images/sprite.svg#icon-envelope-hover"
+                    ></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="" class="contacts__link"
+                  ><svg class="contacts__icon" width="10px" heigth="16px">
+                    <use href="./images/sprite.svg#icon-Vector"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="" class="contacts__link"
-              ><svg class="contacts__icon" width="16px" heigth="12px">
-                <use href="./images/sprite.svg#icon-envelope-hover"></use></svg>info@devstudio.com</a>
-          </li>
-          <li class="contacts__item">
-            <a href="" class="contacts__link"
-              ><svg class="contacts__icon" width="10px" heigth="16px">
-                <use href="./images/sprite.svg#icon-Vector"></use></svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -123,6 +147,7 @@
           <ul class="section-work__list develop list">
             <li class="develop__item">
               <img
+                srcset="./images/box1.jpg 1x, ./images/box1-x2.jpj 2x"
                 src="./images/box1.jpg"
                 alt="Разработка ПО для ПК"
                 width="370"
@@ -163,7 +188,11 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="card-set list">
             <li class="card-set__item">
-              <img class="card-set__image" src="./images/img.jpg" alt="дизайнер" />
+              <img
+                class="card-set__image"
+                src="./images/img(1).jpg"
+                alt="дизайнер"
+              />
               <div class="card-set__info">
                 <h3 class="card-set__name">Игорь Демьяненко</h3>
                 <p class="card-set__text">Product Designer</p>
@@ -202,7 +231,8 @@
             <li class="card-set__item">
               <img
                 class="card-set__image"
-                src="./images/img(1).jpg"
+                srcset="./images/img(2).jpg 1x, ./images/img(2).jpg 2x"
+                src="./images/img(2).jpg"
                 alt="разработчик"
               />
               <div class="card-set__info">
@@ -243,7 +273,7 @@
             <li class="card-set__item">
               <img
                 class="card-set__image"
-                src="./images/img(2).jpg"
+                src="./images/img(3).jpg"
                 alt="маркетолог"
               />
               <div class="card-set__info">
@@ -284,7 +314,7 @@
             <li class="card-set__item">
               <img
                 class="card-set__image"
-                src="./images/img(3).jpg"
+                src="./images/img(4).jpg"
                 alt="дизайнер"
               />
               <div class="card-set__info">
@@ -379,80 +409,84 @@
 
     <footer class="footer">
       <div class="container">
-        <div>
-          <address class="footer__adress">
-            <a class="logo" href="./index.html"
-              ><span class="accent">Web</span>Studio</a
-            >
-            <ul class="footer__list list">
-              <li class="footer__item">
-                <a class="footer__link" href=""
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer__info">
+          <div>
+            <address class="footer__adress">
+              <a class="logo" href="./index.html"
+                ><span class="accent">Web</span>Studio</a
+              >
+              <ul class="footer__list list">
+                <li class="footer__item">
+                  <a class="footer__link" href=""
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__contact" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__contact" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social">
+            <h2 class="social__title">Присоединяйтесь</h2>
+            <ul class="social__list soclist list">
+              <li class="soclist__item">
+                <a class="soclist__link" href="">
+                  <svg class="soclist__icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__contact" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="soclist__item">
+                <a class="soclist__link" href="">
+                  <svg class="soclist__icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__contact" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="soclist__item">
+                <a class="soclist__link" href="">
+                  <svg class="soclist__icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soclist__item">
+                <a class="soclist__link" href="">
+                  <svg class="soclist__icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social">
-          <h2 class="social__title">Присоединяйтесь</h2>
-          <ul class="social__list soclist list">
-            <li class="soclist__item">
-              <a class="soclist__link" href="">
-                <svg class="soclist__icon">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soclist__item">
-              <a class="soclist__link" href="">
-                <svg class="soclist__icon">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soclist__item">
-              <a class="soclist__link" href="">
-                <svg class="soclist__icon">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soclist__item">
-              <a class="soclist__link" href="">
-                <svg class="soclist__icon">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="footer__form subscribe">
           <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-          <label type="email" id="email">
-            <input
-              class="subscribe__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-          </label>
-          <button type="submit" class="subscribe__button">
-            Подписаться
-            <svg class="subscribe__icon">
-              <use href="./images/sprite.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+          <div class="input">
+            <label type="email" id="email">
+              <input
+                class="subscribe__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe__button">
+              Подписаться
+              <svg class="subscribe__icon">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
@@ -528,5 +562,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

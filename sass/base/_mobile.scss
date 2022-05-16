@@ -1,6 +1,44 @@
 @media screen and(min-width: 480px) {
   .page-header {
+    position: relative;
     height: 60px;
+
+    &__icon {
+      margin: 0;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  .menu__button {
+    display: inline-flex;
+    margin-left: 266px;
+    margin-right: 15px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .menu-container {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+    width: 100%;
+    height: 796px;
+    padding: 20px;
+    text-align: center;
+    background-color: $primeryWhiteColor;
+
+    &.is-open {
+      display: block;
+    }
   }
 }
 
@@ -55,13 +93,36 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  .about {
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    &__image {
+      width: 100%;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-block-end: 0em;
+      margin-bottom: 20px;
+    }
+  }
+}
+
 @media screen and (min-width: 480px) {
   .about {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 
     &__image {
       width: 450px;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-block-end: 0em;
+      margin-bottom: 30px;
     }
   }
 }
@@ -92,7 +153,7 @@
     display: flex;
     margin: 0 -15px;
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 64px;
 
     &__image {
       width: 270px;
@@ -106,6 +167,25 @@
     &__title {
       text-align: left;
     }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card-set {
+    &__image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &__item:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  .team {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -150,14 +230,6 @@
   }
 }
 
-@media screen and (max-width: 479px) {
-  .card-set__image {
-    display: block;
-    width: 100%;
-    height: 460px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .card-set {
     display: flex;
@@ -176,9 +248,6 @@
       width: 354px;
       height: 374px;
     }
-  }
-  .team__title {
-    // margin: 15px;
   }
 }
 
@@ -270,6 +339,11 @@
     margin-top: 94px;
     margin-bottom: 94px;
 
+    &__list {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
     &__link {
       margin: 0 15px;
       width: 170px;
@@ -279,6 +353,156 @@
       margin-bottom: 50px;
       font-size: 36px;
       line-height: 1.16;
+    }
+  }
+}
+
+@media screen and(max-width: 479px) {
+  .footer {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__adress {
+      margin-bottom: 40px;
+    }
+
+    &__item {
+      text-decoration: none;
+      list-style: none;
+    }
+
+    &__list {
+      padding-inline-start: 0px;
+    }
+  }
+
+  .social {
+    display: inline-block;
+    margin-bottom: 60px;
+    justify-content: center;
+
+    &__list {
+      margin-top: 0;
+      margin-bottom: 0px;
+      padding-left: 0;
+      list-style: none;
+    }
+  }
+
+  .subscribe {
+    &__input {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and(min-width: 480px) {
+  .footer {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__adress {
+      margin-bottom: 60px;
+    }
+
+    &__item {
+      text-decoration: none;
+      list-style: none;
+    }
+
+    &__list {
+      padding-inline-start: 0px;
+    }
+  }
+
+  .social {
+    display: inline-block;
+    margin-bottom: 60px;
+
+    &__list {
+      margin-top: 0;
+      margin-bottom: 0px;
+      padding-left: 0;
+      list-style: none;
+    }
+  }
+
+  .subscribe {
+    display: inline-block;
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__input {
+      display: block;
+      width: 450px;
+      height: 50px;
+      margin-bottom: 20px;
+      outline: none;
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .footer {
+    &__info {
+      display: flex;
+      align-items: baseline;
+    }
+    &__adress {
+      margin-left: 60px;
+    }
+  }
+
+  .social {
+    margin-left: 165px;
+  }
+
+  .subscribe {
+    &__input {
+      height: 56px;
+    }
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer {
+    align-items: baseline;
+    &__adress {
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    &__form {
+      margin-left: 93px;
+      text-align: left;
+    }
+  }
+
+  .social {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
+
+  .subscribe {
+    &__input {
+      width: 358px;
+      height: 50px;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+
+    .input {
+      display: flex;
     }
   }
 }
