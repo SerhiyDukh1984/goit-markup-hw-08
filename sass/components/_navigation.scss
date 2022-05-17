@@ -1,43 +1,46 @@
 .navigation {
+  width: auto;
+  position: relative;
+  list-style: none;
   display: flex;
   align-items: center;
 }
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
 
   &__list {
+    list-style-type: none;
     display: block;
-  //   position: relative;
-  //   display: none;
-  //   margin-left: 94px;
-  //   margin-top: 0;
-  //   margin-bottom: 0;
+    padding-inline-start: 0;
+  
   }
 
-  // &__item + &__item {
-  //   margin-left: 50px;
-  // }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
-// .nav__link {
+.nav__link {
   // position: relative;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
-  // text-decoration: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+ 
 
-  // color: var(--title-text-color);
-  // transition: color 250ms $timeFunction;
+  color: $titleTextColor;
+  transition: color 250ms $timeFunction;
 
-  // &:hover,
-  // &:focus {
-  //   color: $accentColor;
-  // }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 
   // &::after {
   //   content: "";
@@ -52,7 +55,7 @@
 
   //   opacity: 0;
   //   transition: opacity 250ms $timeFunction;
-  // }
+  }
 
   // &.current::after {
   //   opacity: 1;

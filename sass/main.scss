@@ -3,7 +3,7 @@
 @import "./utils/hidden";
 // @import "./utils/mixin";
 
-// @import "./base/common";
+@import "./base/common";
 @import "./base/container";
 @import "./base/mobile";
 
@@ -11,7 +11,7 @@
 @import "./components/buttons";
 // @import "./components/checkbox";
 @import "./components/contact";
-// @import "./components/portfolio-button";
+@import "./components/portfolio-button";
 // @import "./components/form";
 @import "./components/footer-form";
 @import "./components/logo";
@@ -27,4 +27,4 @@
 @import "./layout/hero";
 @import "./layout/team";
 @import "./layout/work";
-// @import "./layout/works";
+@import "./layout/works";

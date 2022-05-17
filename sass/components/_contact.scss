@@ -8,11 +8,11 @@
 
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    // font-size: 14px;
+    // line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: $primeryTextColor;
+    // color: $primeryTextColor;
     fill: $primeryTextColor;
     transition: color 250ms $timeFunction, fill 250ms $timeFunction;
   }
