@@ -81,56 +81,6 @@ textarea {
   }
 }
 
-@media screen and (max-width: 479px) {
-  .page-header {
-    position: relative;
-    height: 60px;
-  }
-  .page-header__icon {
-    margin: 0;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-  }
-  .menu__button {
-    display: inline-flex;
-    margin-right: 15px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-  }
-  .menu__button .icon-cross {
-    display: none;
-  }
-  .menu__button.is-open .icon-cross {
-    display: flex;
-    top: 15px;
-    left: 15px;
-  }
-  .menu__button.is-open .icon-menu {
-    display: none;
-  }
-  .nav-block {
-    display: flex;
-    align-items: center;
-  }
-  .menu-container {
-    position: absolute;
-    display: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 796px;
-    padding: 20px;
-    background-color: bisque;
-  }
-  .menu-container.is-open {
-    display: block;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .page-header {
     position: relative;
