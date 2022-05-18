@@ -6,8 +6,10 @@
 @import "./base/common";
 @import "./base/container";
 @import "./base/mobile";
+@import "./base/_tablet";
 
 @import "./components/backdrop";
+@import "./components/_mobile-menu";
 @import "./components/buttons";
 @import "./components/checkbox";
 @import "./components/contact";

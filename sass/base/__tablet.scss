@@ -1,0 +1,43 @@
+@media screen and(max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .page-header {
+    padding: 0;
+  }
+  .logo {
+    margin-right: 88px;
+  }
+
+  .nav {
+    display: flex;
+
+    &__list {
+      display: flex;
+      margin-right: auto;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .contacts {
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+  }
+}

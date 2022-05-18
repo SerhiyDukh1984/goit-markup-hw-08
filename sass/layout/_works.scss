@@ -7,8 +7,8 @@
 }
 
 .work-card__item {
-  // margin-right: 30px;
-  // margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms $timeFunction;
 
   &__item:nth-child(3n) {
@@ -55,6 +55,7 @@
 }
 
 .work-card__description {
+  flex-grow: 1;
   
 
   border-right: 2px solid #eeeeee;

@@ -1,38 +1,33 @@
 .navigation {
-  width: auto;
   position: relative;
-  list-style: none;
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+
+  list-style: none;
+ 
+  
 }
 
 .nav {
-  position: relative;
-  display: flex;
   align-items: center;
 
   &__list {
-    list-style-type: none;
-    display: block;
-    padding-inline-start: 0;
-  
-  }
+    margin-top: 0;
+    margin-bottom: 0;
 
-  &__item:not(:last-child) {
-    margin-bottom: 32px;
+    padding-inline-start: 0;
   }
 }
 
 .nav__link {
-  // position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 32;
+  padding-bottom: 32;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 14px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
- 
 
   color: $titleTextColor;
   transition: color 250ms $timeFunction;
@@ -42,26 +37,26 @@
     color: $accentColor;
   }
 
-  // &::after {
-  //   content: "";
+  &::after {
+    content: "";
 
-  //   position: absolute;
-  //   bottom: -1px;
-  //   display: block;
-  //   width: 100%;
-  //   height: 4px;
-  //   border-radius: 2px;
-  //   background-color: $accentColor;
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accentColor;
 
-  //   opacity: 0;
-  //   transition: opacity 250ms $timeFunction;
+    opacity: 0;
+    transition: opacity 250ms $timeFunction;
   }
 
-  // &.current::after {
-  //   opacity: 1;
-  // }
+  &.current::after {
+    opacity: 1;
+  }
 
-//   &.current {
-//     color: $accentColor;
-//   }
-// }
+  &.current {
+    color: $accentColor;
+  }
+}

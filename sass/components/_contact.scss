@@ -1,18 +1,11 @@
 .contacts {
-  display: block;
-  margin: 0 0 0 auto;
   padding-inline-start: 0px;
 
   &__link {
-    
-
-    text-decoration: none;
     font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.14;
     letter-spacing: 0.02em;
 
-    // color: $primeryTextColor;
+    color: $primeryTextColor;
     fill: $primeryTextColor;
     transition: color 250ms $timeFunction, fill 250ms $timeFunction;
   }
@@ -29,9 +22,7 @@
     margin-right: 10px;
   }
 
-    &__item+&__item {
-      margin-left: 50px;
-    }
+  // &__item + &__item {
+  //   margin-left: 50px;
+  // }
 }
-
-

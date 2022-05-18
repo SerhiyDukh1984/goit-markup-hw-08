@@ -1,0 +1,172 @@
+@media screen and(max-width: 767px) {
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .menu-button {
+    position: absolute;
+    display: inline-flex;
+
+    right: 15px;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+
+    &:hover .icon-cross,
+    &:focus .icon-menu,
+    &:hover .icon-cross,
+    &:focus .icon-menu {
+      fill: $accentColor;
+    }
+
+    &.is-open .icon-cross {
+      display: block;
+    }
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
+
+  .icon-cross {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 48px;
+  background-color: $primeryWhiteColor;
+  transform: translateX(100%);
+  transition: transform 500ms $timeFunction;
+
+  &.is-open {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.menu-nav {
+  &__link {
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $titleTextColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accentColor;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    margin-bottom: auto;
+  }
+}
+
+.menu-contacts {
+  &__link--phone {
+    color: $accentColor;
+  }
+
+  &__mail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  &__link--mail {
+    color: $primeryTextColor;
+  }
+
+  &__phone {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+
+    letter-spacing: 0.02em;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.mob-soc {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $accentColor;
+
+    letter-spacing: 0.02em;
+  }
+
+  &__line {
+    margin: 0 10px;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+@media screen and(min-width: 480px) {
+  .menu-contacts {
+    &__phone {
+      font-size: 34px;
+    }
+
+    &__mail {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  // .menu-nav {
+  //   display: none;
+  // }
+
+  // .menu-contacts {
+  //   display: none;
+  // }
+
+  // .mob-soc {
+  //   display: none;
+  // }
+}
