@@ -561,6 +561,16 @@ textarea {
   .work-card__item:last-child {
     margin-bottom: 15px;
   }
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .contacts {
+    display: flex;
+  }
+  .contacts__item {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {
