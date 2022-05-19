@@ -16,7 +16,7 @@
     margin-left: auto;
     border: none;
     background-color: transparent;
-    z-index: 10;
+    z-index: 3;
 
     &:hover .icon-cross,
     &:focus .icon-menu,
@@ -40,6 +40,7 @@
 
 .menu-container {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   opacity: 0;
@@ -158,15 +159,5 @@
     display: none;
   }
 
-  // .menu-nav {
-  //   display: none;
-  // }
 
-  // .menu-contacts {
-  //   display: none;
-  // }
-
-  // .mob-soc {
-  //   display: none;
-  // }
 }

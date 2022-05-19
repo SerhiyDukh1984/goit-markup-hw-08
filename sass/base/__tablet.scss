@@ -49,5 +49,13 @@
     &__item:not(:last-child) {
       margin-bottom: 10px;
     }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
   }
 }
+
+
