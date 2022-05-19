@@ -55,14 +55,30 @@
           </ul>
         </nav>
 
-        <button class="menu-button is-open" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg class="menu__icon" aria-label="переключатель меню" width="40px" height="40px">
-            <use class="icon-menu" href="./images/sprite.svg#icon-close_40px"></use>
-            <use class="icon-cross" href="./images/sprite.svg#icon-menu_40px"></use>
+        <button
+          class="menu-button is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu__icon"
+            aria-label="переключатель меню"
+            width="40px"
+            height="40px"
+          >
+            <use
+              class="icon-menu"
+              href="./images/sprite.svg#icon-close_40px"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-menu_40px"
+            ></use>
           </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
-        
           <ul class="menu-nav__list list">
             <li class="menu-nav__item">
               <a class="menu-nav__link current" href="./index.html">Студия</a>
@@ -76,12 +92,15 @@
           </ul>
           <ul class="menu-contacts list">
             <li class="menu-contacts__phone">
-              <a href="" class="menu-contacts__link--phone">+38 096 111 11 11</a>
+              <a href="" class="menu-contacts__link--phone"
+                >+38 096 111 11 11</a
+              >
             </li>
             <li class="menu-contacts__mail">
-              <a href="" class="menu-contacts__link--mail">info@devstudio.com</a>
+              <a href="" class="menu-contacts__link--mail"
+                >info@devstudio.com</a
+              >
             </li>
-            
           </ul>
           <ul class="mob-soc list">
             <li class="mob-soc__link">
@@ -102,9 +121,6 @@
           </ul>
         </div>
       </div>
-
-      
-      
     </header>
 
     <main>
@@ -180,11 +196,9 @@
           <ul class="section-work__list develop list">
             <li class="develop__item">
               <img
-                srcset="./images/box1.jpg 1x, ./images/box1-x2.jpg 2x"
+                srcset="./images/job1.1x.jpg, ./"
                 src="./images/box1.jpg"
                 alt="Разработка ПО для ПК"
-                width="370"
-                height="294"
               />
               <div class="develop__fon">
                 <p class="develop__text">Десктопные приложения</p>
@@ -223,8 +237,17 @@
             <li class="card-set__item">
               <img
                 class="card-set__image"
-                src="./images/img(1).jpg"
+                srcset="
+                  ./images/team1.270.1x.jpg 270w,
+                  ./images/team1.270.2x.jpg 270w,
+                  ./images/team1.354.1x.jpg 354w,
+                  ./images/team1.354.2x.jpg 354w,
+                  ./images/team1.450.1x.jpg 450w,
+                  ./images/team1.450.2x.jpg 450w
+                "
+                src="./images/team1.270.1x.jpg"
                 alt="дизайнер"
+                sizes="100vw"
               />
               <div class="card-set__info">
                 <h3 class="card-set__name">Игорь Демьяненко</h3>
@@ -585,8 +608,10 @@
             <svg class="checkbox__icon">
               <use href="./images/sprite.svg#icon-check"></use>
             </svg>
-            <p class="form__agree">Соглашаюсь с рассылкой и принимаю
-            <span><a class="form__link" href=""> Условия договора</a></span></p>
+            <p class="form__agree">
+              Соглашаюсь с рассылкой и принимаю
+              <span><a class="form__link" href=""> Условия договора</a></span>
+            </p>
           </label>
 
           <button class="form-button" type="submit">Отправить</button>
