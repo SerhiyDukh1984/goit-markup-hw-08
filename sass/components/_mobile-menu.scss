@@ -1,42 +1,4 @@
-@media screen and(max-width: 767px) {
-  .page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 
-  .navigation {
-    display: flex;
-  }
-
-  .menu-button {
-    position: absolute;
-    display: inline-flex;
-
-    right: 15px;
-    margin-left: auto;
-    border: none;
-    background-color: transparent;
-    z-index: 3;
-
-    &:hover .icon-cross,
-    &:focus .icon-menu,
-    &:hover .icon-cross,
-    &:focus .icon-menu {
-      fill: $accentColor;
-    }
-
-    &.is-open .icon-cross {
-      display: block;
-    }
-    &.is-open .icon-menu {
-      display: none;
-    }
-  }
-
-  .icon-cross {
-    display: none;
-  }
-}
 
 .menu-container {
   position: fixed;

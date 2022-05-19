@@ -2,12 +2,10 @@
   position: relative;
   align-items: baseline;
   border: none;
- 
 }
 
 .subscribe {
   &__title {
-  
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -18,8 +16,7 @@
 
   &__input {
     padding: 0 16px;
-    
-    
+
     color: $primeryWhiteColor;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);

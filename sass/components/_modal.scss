@@ -1,5 +1,4 @@
 .backdrop.is-hidden .modal {
-  
   transform: translate(-50%, -50%) translateY(150%);
 }
 
@@ -12,7 +11,6 @@
   z-index: 999;
   transform: translate(-50%, -50%) translateY(0);
   transition: transform 500ms $timeFunction;
-
 
   padding: 15px;
 

@@ -5,7 +5,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 40px 0;
-  
 
   &__title {
     margin-bottom: 10px;
@@ -32,8 +31,6 @@
     color: $accentColor;
     border-bottom: 1px solid $accentColor;
   }
-
-  
 }
 
 .form__field {
@@ -107,7 +104,6 @@
 }
 
 .form-button {
-  // z-index: 999;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;

@@ -1,9 +1,7 @@
 .abouts .works {
   display: flex;
-  // justify-content: center;
+
   margin-top: 0;
-  // margin-bottom: 50px;
-  // padding-inline-start: 0px;
 
   &__item:not(:last-child) {
     margin-right: 8px;
