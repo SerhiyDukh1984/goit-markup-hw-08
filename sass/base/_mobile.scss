@@ -2,8 +2,6 @@
 
 @media screen and (min-width: 480px) {
   .hero {
-    height: 400px;
-
     &__title {
       margin-left: auto;
       margin-right: auto;
@@ -337,6 +335,21 @@
   }
 }
 
+
+
+// MODAL
+
+@media screen and(max-width: 380px) {
+  .form__agree {
+    font-size: 10px;
+  }
+
+  .form__text {
+    
+  }
+}
+
+
 @media screen and(max-width: 479px) {
   .modal {
     width: 90%;
@@ -347,9 +360,17 @@
     width: 100%;
 
     &__agree {
-      font-size: 12px;
+      font-size: 10px;
       line-height: 1.16;
     }
+
+    &__text {
+      padding-left: 20px;
+    }
+  }
+
+  .checkbox__icon {
+    margin-left: 0;
   }
 }
 

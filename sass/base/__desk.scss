@@ -15,8 +15,8 @@
   }
 
   .logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -31,8 +31,6 @@
 
 @media screen and (max-width: 1199px) {
   .hero {
-    height: 600px;
-
     &__title {
       font-size: 26px;
       line-height: 1.62;
