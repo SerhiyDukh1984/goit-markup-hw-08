@@ -1647,9 +1647,12 @@ textarea {
 
 .section-work {
   padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .section-work__list {
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
 }
 
