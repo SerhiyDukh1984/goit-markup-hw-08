@@ -4,7 +4,6 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 0;
 
   &__title {
     margin-bottom: 10px;
@@ -110,13 +109,15 @@
   padding: 10px 56px;
   color: $primeryWhiteColor;
   background: $accentColor;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border: none;
   border-radius: 4px;
   transition: background 250ms $timeFunction;
 
-  .form-button:hover,
-  .form-button:focus {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
