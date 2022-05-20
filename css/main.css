@@ -177,7 +177,6 @@ textarea {
     display: flex;
   }
   .clients__title {
-    margin-bottom: 15px;
     font-size: 28px;
     line-height: 1.18;
   }
@@ -226,6 +225,9 @@ textarea {
   .footer__list {
     padding-inline-start: 0px;
   }
+  .footer__contact {
+    color: rgba(255, 255, 255, 0.6);
+  }
   .social {
     display: inline-block;
     margin-bottom: 60px;
@@ -246,7 +248,6 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .footer {
-    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -259,6 +260,9 @@ textarea {
   }
   .footer__list {
     padding-inline-start: 0px;
+  }
+  .footer__contact {
+    color: rgba(255, 255, 255, 0.6);
   }
   .social {
     display: inline-block;
@@ -310,7 +314,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
   .abouts .works__item:nth-child(-n + 3) {
     margin-bottom: 15px;
@@ -318,10 +322,6 @@ textarea {
 }
 
 @media screen and (min-width: 480px) {
-  .section.abouts {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .abouts__list {
     display: flex;
   }
@@ -329,7 +329,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
   .abouts .works__item:nth-child(-n + 3) {
     margin-bottom: 15px;
@@ -437,7 +437,7 @@ textarea {
   .page-header {
     padding: 0;
   }
-  .logo {
+  .page-header .logo {
     margin-right: 88px;
     font-size: 24px;
     line-height: 1.16;
@@ -454,7 +454,7 @@ textarea {
   }
   .nav__link {
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.16;
     padding-top: 32px;
     padding-bottom: 35px;
@@ -463,16 +463,19 @@ textarea {
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .contacts__item:not(:last-child) {
-    margin-bottom: 2px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
   .contacts__link {
     display: flex;
     align-items: center;
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__title {
+    text-align: center;
   }
 }
 
@@ -486,11 +489,11 @@ textarea {
     width: 354px;
   }
   .about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
     width: 354px;
     margin: 0 15px;
-  }
-  .about__title {
-    text-align: left;
   }
 }
 
@@ -546,6 +549,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__info {
     display: flex;
@@ -559,6 +568,12 @@ textarea {
   }
   .subscribe__input {
     height: 56px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .abouts .works {
+    margin-bottom: 30px;
   }
 }
 
@@ -584,9 +599,21 @@ textarea {
     display: none;
     padding-top: 0;
   }
+  .contacts__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .contacts__link {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
@@ -596,11 +623,29 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   .hero__title {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -647,6 +692,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    padding-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients {
     margin-top: 94px;
@@ -680,6 +731,15 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer .container {
+    text-align: center;
+  }
+  .footer__adress {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer .container {
     display: flex;
@@ -708,6 +768,23 @@ textarea {
   }
   .subscribe .input {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section.abouts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .abouts {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .abouts .works {
+    margin-bottom: 50px;
   }
 }
 
@@ -779,6 +856,7 @@ textarea {
 }
 
 .menu-contacts__link--phone {
+  text-decoration: none;
   color: #2196f3;
 }
 
@@ -790,6 +868,7 @@ textarea {
 }
 
 .menu-contacts__link--mail {
+  text-decoration: none;
   color: #757575;
 }
 
@@ -1148,12 +1227,10 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
   z-index: 999;
   transform: translate(-50%, -50%) translateY(0);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 15px;
+  padding: 40px;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1448,7 +1525,6 @@ textarea {
 
 .footer__contact {
   text-decoration: none;
-  color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1506,8 +1582,6 @@ textarea {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
   text-align: center;
   max-width: 1600px;
   background-position: center;
@@ -1566,8 +1640,6 @@ textarea {
 .team__title {
   margin-top: 0;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;

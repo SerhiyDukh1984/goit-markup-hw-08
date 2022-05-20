@@ -8,17 +8,17 @@
   .contacts {
     display: none;
   }
-  
 }
 
 @media screen and(min-width: 768px) {
   .page-header {
     padding: 0;
-  }
-  .logo {
-    margin-right: 88px;
-    font-size: 24px;
-    line-height: 1.16;
+
+    .logo {
+      margin-right: 88px;
+      font-size: 24px;
+      line-height: 1.16;
+    }
   }
 
   .nav {
@@ -34,7 +34,7 @@
     }
     &__link {
       position: relative;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.16;
       padding-top: 32px;
       padding-bottom: 35px;
@@ -45,12 +45,8 @@
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    &__item:not(:last-child) {
-      margin-bottom: 2px;
-    }
+    padding-top: 14px;
+    padding-bottom: 14px;
 
     &__link {
       display: flex;
@@ -61,6 +57,11 @@
 }
 
 // CAPTION
+@media screen and(max-width: 767px) {
+  .about__title {
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .about {
@@ -73,12 +74,11 @@
     }
 
     &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
       width: 354px;
       margin: 0 15px;
-    }
-
-    &__title {
-      text-align: left;
     }
   }
 }
@@ -156,6 +156,12 @@
 
 // FOOTER
 
+@media screen and(max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 @media screen and(min-width: 768px) {
   .footer {
     &__info {
@@ -176,5 +182,13 @@
     &__input {
       height: 56px;
     }
+  }
+}
+
+// PORTFOLIO
+
+@media screen and(min-width: 768px) {
+  .abouts .works {
+    margin-bottom: 30px;
   }
 }

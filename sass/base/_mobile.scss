@@ -121,7 +121,6 @@
     }
 
     &__title {
-      margin-bottom: 15px;
       font-size: 28px;
       line-height: 1.18;
     }
@@ -180,6 +179,10 @@
     &__list {
       padding-inline-start: 0px;
     }
+
+    &__contact {
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 
   .social {
@@ -206,7 +209,6 @@
 
 @media screen and(min-width: 480px) {
   .footer {
-    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -221,6 +223,10 @@
 
     &__list {
       padding-inline-start: 0px;
+    }
+
+    &__contact {
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 
@@ -285,7 +291,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 
     &__item:nth-child(-n + 3) {
       margin-bottom: 15px;
@@ -294,11 +300,6 @@
 }
 
 @media screen and(min-width: 480px) {
-  .section.abouts {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
   .abouts__list {
     display: flex;
   }
@@ -307,7 +308,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 
     &__item:nth-child(-n + 3) {
       margin-bottom: 15px;
@@ -335,20 +336,13 @@
   }
 }
 
-
-
 // MODAL
 
 @media screen and(max-width: 380px) {
   .form__agree {
     font-size: 10px;
   }
-
-  .form__text {
-    
-  }
 }
-
 
 @media screen and(max-width: 479px) {
   .modal {

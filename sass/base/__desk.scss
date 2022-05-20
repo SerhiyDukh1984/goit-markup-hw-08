@@ -25,12 +25,24 @@
     display: none;
     padding-top: 0;
   }
+
+  .contacts__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  .contacts__link {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 // HERO
 
 @media screen and (max-width: 1199px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     &__title {
       font-size: 26px;
       line-height: 1.62;
@@ -44,6 +56,8 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     &__title {
       width: 696px;
       font-size: 44px;
@@ -54,6 +68,22 @@
 }
 
 // TEAM
+
+@media screen and(max-width: 1199px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+// CAPTION
 
 @media screen and (min-width: 1200px) {
   .about {
@@ -107,6 +137,12 @@
 
 // CLIENTS
 
+@media screen and(max-width: 1199px) {
+  .clients__title {
+    padding-bottom: 30px;
+  }
+}
+
 @media screen and(min-width: 1200px) {
   .clients {
     margin-top: 94px;
@@ -151,6 +187,15 @@
 
 // FOOTER
 
+@media screen and(max-width: 1199px) {
+  .footer .container {
+    text-align: center;
+  }
+  .footer__adress {
+    text-align: center;
+  }
+}
+
 @media screen and(min-width: 1200px) {
   .footer .container {
     display: flex;
@@ -187,5 +232,24 @@
     .input {
       display: flex;
     }
+  }
+}
+
+// PORTOPLIO
+
+@media screen and(max-width: 1199px) {
+  .section.abouts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .abouts {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .abouts .works {
+    margin-bottom: 50px;
   }
 }
